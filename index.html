@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Etch-A-Sketch</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Etch-A-Sketch</h1>
+        <nav>
+            <button id="reset" onclick="createGrid()">Reset Grid</button>
+            
+            <div id="color-picker">
+                <h2>Choose a color</h2>
+                <button class="btn red" onclick="color('red')">Red</button>
+                <button class="btn orange" onclick="color('orange')">Orange</button>
+                <button class="btn yellow" onclick="color('yellow')">Yellow</button>
+                <button class="btn green" onclick="color('green')">Green</button>
+                <button class="btn blue" onclick="color('blue')">Blue</button>
+                <button class="btn purple" onclick="color('purple')">Purple</button>
+            </div>
+        </nav>
+    </header>
+    <div id="container"></div>
+</body>
+<script src="main.js"></script>
+</html>
